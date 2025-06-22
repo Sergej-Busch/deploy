@@ -3,14 +3,20 @@ image:
   tag: latest
   pullPolicy: Always
 
-service:
-  port: 8080
-
 ingress:
   enabled: true
   ingressClassName: nginx
   hosts:
     - host: hello.ah-ne.in
       paths:
-        - path: /
-          pathType: ImplementationSpecific
+        - path: /hello
+          pathType: Prefix
+#        - path: /api
+#          pathType: Prefix
+#    - host: another.ah-ne.in
+#      paths:
+#        - path: /foo
+#          pathType: Prefix
+
+service:
+  port: 8080
