@@ -1,0 +1,16 @@
+image:
+  repository: ghcr.io/sergej-busch/backend
+  tag: latest
+  pullPolicy: Always
+
+service:
+  port: 80
+
+ingress:
+  enabled: true
+  className: nginx
+  hosts:
+    - host: hello.ah-ne.in
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
