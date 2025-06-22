@@ -1,4 +1,4 @@
-image:
+image: ghcr.io/sergej-busch/backend:latest
   repository: ghcr.io/sergej-busch/backend
   tag: latest
   pullPolicy: Always
