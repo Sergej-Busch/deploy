@@ -8,9 +8,7 @@ service:
 
 ingress:
   enabled: true
-  className: nginx
-  hosts:
-    - host: hello.ah-ne.in
-      paths:
-        - path: /
-          pathType: ImplementationSpecific
+  ingressClassName: nginx
+  host: hello.ah-ne.in
+  path: /
+  pathType: ImplementationSpecific
