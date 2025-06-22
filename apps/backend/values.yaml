@@ -1,4 +1,4 @@
-image: ghcr.io/sergej-busch/backend:latest
+image:
   repository: ghcr.io/sergej-busch/backend
   tag: latest
   pullPolicy: Always
@@ -9,6 +9,8 @@ service:
 ingress:
   enabled: true
   ingressClassName: nginx
-  host: hello.ah-ne.in
-  path: /
-  pathType: ImplementationSpecific
+  hosts:
+    - host: hello.ah-ne.in
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
