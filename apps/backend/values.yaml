@@ -1,6 +1,6 @@
 image:
   repository: ghcr.io/sergej-busch/backend
-  tag: abcd123
+  tag: 47369915c1215f66695d4db1c0be832ce7e05401
   pullPolicy: Always
 
 service:
