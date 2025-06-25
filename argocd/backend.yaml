@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/Sergej-Busch/deploy
-    targetRevision: HEAD
+    targetRevision: main
     path: apps/backend
     helm:
       valueFiles:
